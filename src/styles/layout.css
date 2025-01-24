@@ -2,9 +2,7 @@
 	display: grid;
 	grid-template-columns:
 		[full-width-start] 0px
-		[content-start] 0px
-		[inner-content-start] 1fr
-		[inner-content-end] 0px
+		[content-start] 1fr
 		[content-end] 0px
 		[full-width-end];
 
@@ -15,8 +13,5 @@
 	}
 	& > .content {
 		grid-column: content;
-	}
-	& > .inner-content {
-		grid-column: inner-content;
 	}
 }
