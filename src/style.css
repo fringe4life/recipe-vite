@@ -26,6 +26,7 @@
 body {
 	font-family: "Young-serif", serif;
 	font-weight: 400;
+	color: var(--stone-600);
 }
 
 strong {
@@ -33,6 +34,7 @@ strong {
 }
 
 .header-title {
+	color: var(--stone-900);
 	font-size: 2.25rem;
 	font-weight: 400;
 }
@@ -44,14 +46,25 @@ strong {
 
 .preperation-title {
 	font-size: 1.25rem;
+	color: var(--rose-800);
 	font-weight: 600;
+
+	background-color: var(--rose-50);
 }
 
 .section-title {
 	font-weight: 400;
 	font-size: 1.75rem;
+	color: var(--brown-800);
 }
 
-.list-item {
+.list-item,
+th,
+td {
 	line-height: 1.5;
 }
+
+/* td {
+	font-weight: 700;
+  color: var(--brown-800);
+} */
