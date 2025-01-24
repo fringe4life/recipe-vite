@@ -64,7 +64,11 @@ td {
 	line-height: 1.5;
 }
 
-/* td {
+li::marker {
+	color: var(--brown-800);
+}
+
+td {
 	font-weight: 700;
   color: var(--brown-800);
-} */
+}
