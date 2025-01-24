@@ -1,3 +1,5 @@
+@import url("@styles/layout.css");
+
 @font-face {
 	font-family: "Young Serif";
 	src: url("@assets/fonts/young-serif/YoungSerif-Regular.ttf") format(truetype);
@@ -70,5 +72,5 @@ li::marker {
 
 td {
 	font-weight: 700;
-  color: var(--brown-800);
+	color: var(--brown-800);
 }

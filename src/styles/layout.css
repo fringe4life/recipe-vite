@@ -1,0 +1,22 @@
+.main-grid {
+	display: grid;
+	grid-template-columns:
+		[full-width-start] 0px
+		[content-start] 0px
+		[inner-content-start] 1fr
+		[inner-content-end] 0px
+		[content-end] 0px
+		[full-width-end];
+
+	gap: 2em;
+
+	& > .full-width {
+		grid-column: full-width;
+	}
+	& > .content {
+		grid-column: content;
+	}
+	& > .inner-content {
+		grid-column: inner-content;
+	}
+}
