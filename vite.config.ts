@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite';
 import path from 'node:path';
+import fs from 'node:fs';
+import {glob} from 'glob';
 
 // Path aliases
 const alias = {
@@ -8,27 +10,17 @@ const alias = {
   '@styles': path.resolve(__dirname, '/src/styles'),
 };
 
-// Function to import and make Vite aware of all HTML files
-const htmlPlugin = () => {
-  return {
-    name: 'html-import-all',
-    
-    async transform(code: string, id: string) {
-      if (!/\.html$/.test(id)) return;
-      const result = await this.transform(code, id, {
-        loader: 'js',
-      });
-      return {
-        code: result.code,
-        map: result.map,
-      };
-    },
-  };
+// Function to get all HTML files
+const getAllHtmlFiles = (dir: string): string[] => {
+  return glob.sync(`${dir}/**/*.html`);
 };
+
+// Get all HTML files from the src directory
+const htmlFiles = getAllHtmlFiles(path.resolve(__dirname, 'src'));
 
 // Vite config
 export default defineConfig({
-  plugins: [htmlPlugin()],
+  plugins: [],
   resolve: {
     alias,
   },
@@ -36,6 +28,7 @@ export default defineConfig({
     minify: true,
     target: 'esnext',
     rollupOptions: {
+      input: htmlFiles,
       // Disable console and debugger
       output: {
         inlineDynamicImports: true,
