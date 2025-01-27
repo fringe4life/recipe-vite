@@ -1,7 +1,7 @@
 @import url("@styles/layout.css") layer(layout);
 @import url("@styles/reset.css") layer(reset);
 @import url("@styles/table.css") layer(layout.table);
-
+@import url("@styles/margins.css") layer(layout.margins);
 @layer reset, base, layout;
 
 @layer base {

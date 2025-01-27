@@ -1,0 +1,41 @@
+/* Margin Top Classes */
+.mt-small {
+  margin-top: var(--gap-small);
+}
+
+.mt-med {
+  margin-top: var(--gap-medium);
+}
+
+.mt-lge {
+  margin-top: var(--gap-large);
+}
+
+/* Margin Bottom Classes */
+.mb-small {
+  margin-bottom: var(--gap-small);
+}
+
+.mb-med {
+  margin-bottom: var(--gap-medium);
+}
+
+.mb-lge {
+  margin-bottom: var(--gap-large);
+}
+
+/* Margin Top and Bottom Classes */
+.my-small {
+  margin-top: var(--gap-small);
+  margin-bottom: var(--gap-small);
+}
+
+.my-med {
+  margin-top: var(--gap-medium);
+  margin-bottom: var(--gap-medium);
+}
+
+.my-lge {
+  margin-top: var(--gap-large);
+  margin-bottom: var(--gap-large);
+}
