@@ -86,22 +86,30 @@
 		color: var(--brown-800);
 	}
 
-	/* LIST ITEMS, mostly... */
-	.list-item,
-	th,
-	td {
+	/* LIST ITEMS */
+	li {
 		/* typography */
 		line-height: 1.5;
 	}
 
-	li::marker,
-	td {
+	li::marker {
 		/* typography */
 		color: var(--brown-800);
 	}
 	li ~ li {
 		/* layout */
 		margin: 0.5em 0;
+	}
+
+	/* TABLE CELLS */
+	th,
+	td {
+		/* typography */
+		line-height: 1.5;
+	}
+
+	td {
+		color: var(--brown-800);
 	}
 
 	/* Media queries */
