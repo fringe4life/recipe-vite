@@ -30,7 +30,8 @@ body {
 	color: var(--stone-600);
 }
 
-strong {
+strong,
+ol::marker {
 	font-weight: 700;
 }
 
