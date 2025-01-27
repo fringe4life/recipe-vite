@@ -2,5 +2,17 @@
 @import url(./padding.css);
 
 .border-bottom {
-    border-bottom: 1px solid var(--stone-150);
+	border-bottom: 1px solid var(--stone-150);
+}
+
+@media (min-width: 768px) {
+	/* Utility class for border radius small */
+	.border-radius-medium {
+		border-radius: var(--border-radius-medium);
+	}
+
+	/* Utility class for border radius large */
+	.border-radius-lge {
+		border-radius: var(--border-radius-large);
+	}
 }

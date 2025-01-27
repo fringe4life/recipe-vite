@@ -24,7 +24,7 @@
 	}
 }
 
-@media (width >= 768px){
+@media (width >= 768px) {
 	.main-grid,
 	.subgrid {
 		& > .narrow--to-content {
@@ -33,6 +33,11 @@
 	}
 	.main-grid {
 		gap: 0 2.5em;
+	}
+
+	.center {
+		grid-column: content;
+		justify-self: center;
 	}
 	.py-medium {
 		padding: 2.5em 0;

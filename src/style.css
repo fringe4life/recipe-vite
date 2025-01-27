@@ -32,6 +32,8 @@
 		--gap-medium: 2rem;
 		--gap-large: 2.5rem;
 
+		--border-radius-medium: 0.75em;
+		--border-radius-large: 1.5em;
 	}
 
 	body {
@@ -84,5 +86,31 @@
 	}
 	li ~ li {
 		margin: 0.5em 0;
-	} 
+	}
+	@media (min-width: 768px) {
+		html {
+			background-color: var(--stone-100);
+		}
+
+		body {
+			max-width: 616px;
+			background-color: white;
+		}
+		.header-title {
+			font-size: 2.5rem;
+		}
+
+		.section-title {
+			font-size: 2.25rem;
+		}
+
+		.list-item {
+			font-size: 1.125rem;
+		}
+	}
+	@media (min-width: 1024px) {
+		body {
+			max-width: 736px;
+		}
+	}
 }
