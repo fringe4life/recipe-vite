@@ -1,3 +1,6 @@
 @import url(./margins.css);
 @import url(./padding.css);
 
+.border-bottom {
+    border-bottom: 1px solid var(--stone-150);
+}
