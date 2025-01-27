@@ -36,10 +36,6 @@ ol::marker {
 	font-weight: 700;
 }
 
-.header-img {
-	max-width: 100%;
-}
-
 .header-title {
 	color: var(--stone-900);
 	font-size: 2.25rem;
