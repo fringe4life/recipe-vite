@@ -7,7 +7,15 @@
 		[full-width-end];
 
 	gap: 2em;
+}
 
+.subgrid {
+	display: grid;
+	grid-template-columns: subgrid;
+}
+
+.subgrid,
+.main-grid {
 	& > .full-width {
 		grid-column: full-width;
 	}
