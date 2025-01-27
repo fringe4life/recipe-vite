@@ -26,6 +26,11 @@
 
 		--rose-800: hsl(332, 51%, 32%);
 		--rose-50: hsl(330, 100%, 98%);
+
+		--gap-small: 1.5rem;
+		--gap-medium: 2rem;
+		--gap-large: 2.5rem;
+
 	}
 
 	body {
