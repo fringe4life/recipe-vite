@@ -15,6 +15,7 @@
 		src: url("@fonts/outfit/Outfit-Regular.ttf") format(truetype);
 	}
 	:root {
+		/* colors */
 		--white: hsl(0, 0%, 100%);
 
 		--stone-100: hsl(30, 54%, 90%);
@@ -27,35 +28,39 @@
 		--rose-800: hsl(332, 51%, 32%);
 		--rose-50: hsl(330, 100%, 98%);
 
+		/* spacing */
 		--gap-xsmall: 1rem;
 		--gap-small: 1.5rem;
 		--gap-medium: 2rem;
 		--gap-large: 2.5rem;
 
+		/* border radius */
 		--border-radius-medium: 0.75em;
 		--border-radius-large: 1.5em;
 	}
 
 	body {
+		/* typography */
 		font-family: "Young Serif", serif;
 		font-weight: 400;
 		color: var(--stone-600);
 	}
 
-	
-
 	strong,
 	ol::marker {
+		/* typography */
 		font-weight: 700;
 	}
 
 	.header-title {
+		/* typography */
 		color: var(--stone-900);
 		font-size: 2.25rem;
 		font-weight: 400;
 	}
 
 	.header-paragraph {
+		/* typography */
 		font-size: 1rem;
 		font-family: "Outfit", serif;
 	}
@@ -65,12 +70,14 @@
 	}
 
 	.preperation-title {
+		/* typography */
 		font-size: 1.25rem;
 		color: var(--rose-800);
 		font-weight: 600;
 	}
 
 	.section-title {
+		/* typography */
 		font-weight: 400;
 		font-size: 1.75rem;
 		color: var(--brown-800);
@@ -79,16 +86,22 @@
 	.list-item,
 	th,
 	td {
+		/* typography */
 		line-height: 1.5;
 	}
 
 	li::marker,
 	td {
+		/* typography */
 		color: var(--brown-800);
 	}
 	li ~ li {
+		/* layout */
 		margin: 0.5em 0;
 	}
+
+	/* Media queries */
+	/* tablet */
 	@media (min-width: 768px) {
 		html {
 			background-color: var(--stone-100);
@@ -110,6 +123,7 @@
 			font-size: 1.125rem;
 		}
 	}
+	/* desktop */
 	@media (min-width: 1024px) {
 		body {
 			max-width: 736px;
