@@ -2,13 +2,12 @@
 
 @font-face {
 	font-family: "Young Serif";
-	src: url("@assets/fonts/young-serif/YoungSerif-Regular.ttf") format(truetype);
+	src: url("/src/fonts/young-serif/YoungSerif-Regular.ttf") format(truetype);
 }
 
 @font-face {
 	font-family: "Outfit";
-	src: url("@assets/fonts/young-serif/Outfit-VariableFont_wght.ttf")
-		format(truetype);
+	src: url("/src/fonts/outfit/Outfit-Regular.ttf") format(truetype);
 }
 
 :root {
@@ -26,7 +25,7 @@
 }
 
 body {
-	font-family: "Young-serif", serif;
+	font-family: "Young Serif", serif;
 	font-weight: 400;
 	color: var(--stone-600);
 }
