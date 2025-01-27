@@ -1,4 +1,5 @@
 @import url("@styles/layout.css");
+@import url("@styles/reset.css");
 
 @font-face {
 	font-family: "Young Serif";
