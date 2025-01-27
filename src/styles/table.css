@@ -2,6 +2,7 @@ thead,
 tbody,
 table,
 tbody tr {
+	/* probably should have used a grid... */
 	display: flex;
 }
 
@@ -10,6 +11,7 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 	align-items: center;
+
 	/* typography */
 	text-align: left;
 }
@@ -17,7 +19,6 @@ table {
 th,
 td {
 	/* layout */
-	padding: 0.5em;
 	display: block;
 	padding: 0.75em 0 0.75em 2em;
 }
@@ -32,5 +33,6 @@ tbody,
 tr,
 td {
 	/* layout */
+	/* flex: grow 1 shrink 1 basis 0; */
 	flex: 1;
 }
