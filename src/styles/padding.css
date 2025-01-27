@@ -1,0 +1,58 @@
+/* Padding Top Classes */
+.pt-small {
+  padding-top: var(--gap-small);
+}
+
+.pt-med {
+  padding-top: var(--gap-medium);
+}
+
+.pt-lge {
+  padding-top: var(--gap-large);
+}
+
+/* Padding Bottom Classes */
+.pb-xsmall {
+    padding-bottom: var(--gap-xsmall);
+}
+
+.pb-small {
+  padding-bottom: var(--gap-small);
+}
+
+.pb-med {
+  padding-bottom: var(--gap-medium);
+}
+
+.pb-lge {
+  padding-bottom: var(--gap-large);
+}
+
+/* Padding Top and Bottom Classes */
+.py-small {
+  padding-top: var(--gap-small);
+  padding-bottom: var(--gap-small);
+}
+
+.py-med {
+  padding-top: var(--gap-medium);
+  padding-bottom: var(--gap-medium);
+}
+
+.py-lge {
+  padding-top: var(--gap-large);
+  padding-bottom: var(--gap-large);
+}
+
+/* Padding All Sides Classes */
+.p-small {
+  padding: var(--gap-small);
+}
+
+.p-med {
+  padding: var(--gap-medium);
+}
+
+.p-lge {
+  padding: var(--gap-large);
+}

@@ -1,8 +1,9 @@
 @import url("@styles/layout.css") layer(layout);
 @import url("@styles/reset.css") layer(reset);
 @import url("@styles/table.css") layer(layout.table);
-@import url("@styles/margins.css") layer(layout.margins);
-@layer reset, base, layout;
+@import url("@styles/margins.css") layer(utilities.margins);
+@import url("@styles/padding.css") layer(utilities.padding);
+@layer reset, base, layout, utilities;
 
 @layer base {
 	@font-face {
@@ -27,6 +28,7 @@
 		--rose-800: hsl(332, 51%, 32%);
 		--rose-50: hsl(330, 100%, 98%);
 
+		--gap-xsmall: 1rem;
 		--gap-small: 1.5rem;
 		--gap-medium: 2rem;
 		--gap-large: 2.5rem;
@@ -55,12 +57,14 @@
 		font-family: "Outfit", serif;
 	}
 
+	.preperation {
+		background-color: var(--rose-50);
+	}
+
 	.preperation-title {
 		font-size: 1.25rem;
 		color: var(--rose-800);
 		font-weight: 600;
-
-		background-color: var(--rose-50);
 	}
 
 	.section-title {
@@ -75,12 +79,11 @@
 		line-height: 1.5;
 	}
 
-	li::marker {
-		color: var(--brown-800);
-	}
-
+	li::marker,
 	td {
-		font-weight: 700;
 		color: var(--brown-800);
 	}
+	li ~ li {
+		margin: 0.5em 0;
+	} 
 }

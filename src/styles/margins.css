@@ -12,6 +12,9 @@
 }
 
 /* Margin Bottom Classes */
+.mb-xsmall {
+    margin-bottom: var(--gap-xsmall);
+}
 .mb-small {
   margin-bottom: var(--gap-small);
 }

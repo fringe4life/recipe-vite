@@ -37,6 +37,10 @@ thead tr {
 	flex: 1;
 }
 
+th {
+	font-weight: 400;
+}
+
 tbody tr {
 	display: flex;
 	flex-direction: column;
