@@ -86,10 +86,17 @@
 		color: var(--brown-800);
 	}
 
+	/* lists */
+	ol,
+	ul {
+		padding-left: 1.1em;
+	}
+
 	/* LIST ITEMS */
 	li {
 		/* typography */
 		line-height: 1.5;
+		padding-left: 1em;
 	}
 
 	li::marker {
