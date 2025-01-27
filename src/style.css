@@ -1,77 +1,80 @@
-@import url("@styles/layout.css");
-@import url("@styles/reset.css");
+@import url("@styles/layout.css") layer(layout);
+@import url("@styles/reset.css") layer(reset);
 
-@font-face {
-	font-family: "Young Serif";
-	src: url("@fonts/young-serif/YoungSerif-Regular.ttf") format(truetype);
-}
+@layer reset, base, layout;
 
-@font-face {
-	font-family: "Outfit";
-	src: url("@fonts/outfit/Outfit-Regular.ttf") format(truetype);
-}
+@layer base {
+	@font-face {
+		font-family: "Young Serif";
+		src: url("@fonts/young-serif/YoungSerif-Regular.ttf") format(truetype);
+	}
 
-:root {
-	--white: hsl(0, 0%, 100%);
+	@font-face {
+		font-family: "Outfit";
+		src: url("@fonts/outfit/Outfit-Regular.ttf") format(truetype);
+	}
+	:root {
+		--white: hsl(0, 0%, 100%);
 
-	--stone-100: hsl(30, 54%, 90%);
-	--stone-150: hsl(30, 18%, 87%);
-	--stone-600: hsl(30, 10%, 34%);
-	--stone-900: hsl(24, 5%, 18%);
+		--stone-100: hsl(30, 54%, 90%);
+		--stone-150: hsl(30, 18%, 87%);
+		--stone-600: hsl(30, 10%, 34%);
+		--stone-900: hsl(24, 5%, 18%);
 
-	--brown-800: hsl(14, 45%, 36%);
+		--brown-800: hsl(14, 45%, 36%);
 
-	--rose-800: hsl(332, 51%, 32%);
-	--rose-50: hsl(330, 100%, 98%);
-}
+		--rose-800: hsl(332, 51%, 32%);
+		--rose-50: hsl(330, 100%, 98%);
+	}
 
-body {
-	font-family: "Young Serif", serif;
-	font-weight: 400;
-	color: var(--stone-600);
-}
+	body {
+		font-family: "Young Serif", serif;
+		font-weight: 400;
+		color: var(--stone-600);
+	}
 
-strong,
-ol::marker {
-	font-weight: 700;
-}
+	strong,
+	ol::marker {
+		font-weight: 700;
+	}
 
-.header-title {
-	color: var(--stone-900);
-	font-size: 2.25rem;
-	font-weight: 400;
-}
+	.header-title {
+		color: var(--stone-900);
+		font-size: 2.25rem;
+		font-weight: 400;
+	}
 
-.header-paragraph {
-	font-size: 1rem;
-	font-family: "Outfit", serif;
-}
+	.header-paragraph {
+		font-size: 1rem;
+		font-family: "Outfit", serif;
+	}
 
-.preperation-title {
-	font-size: 1.25rem;
-	color: var(--rose-800);
-	font-weight: 600;
+	.preperation-title {
+		font-size: 1.25rem;
+		color: var(--rose-800);
+		font-weight: 600;
 
-	background-color: var(--rose-50);
-}
+		background-color: var(--rose-50);
+	}
 
-.section-title {
-	font-weight: 400;
-	font-size: 1.75rem;
-	color: var(--brown-800);
-}
+	.section-title {
+		font-weight: 400;
+		font-size: 1.75rem;
+		color: var(--brown-800);
+	}
 
-.list-item,
-th,
-td {
-	line-height: 1.5;
-}
+	.list-item,
+	th,
+	td {
+		line-height: 1.5;
+	}
 
-li::marker {
-	color: var(--brown-800);
-}
+	li::marker {
+		color: var(--brown-800);
+	}
 
-td {
-	font-weight: 700;
-	color: var(--brown-800);
+	td {
+		font-weight: 700;
+		color: var(--brown-800);
+	}
 }
