@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 768px) {
-	/* Utility class for border radius small */
+	/* Utility class for border radius medium */
 	.border-radius-medium {
 		border-radius: var(--border-radius-medium);
 	}

@@ -1,52 +1,36 @@
-/* Ensure the table takes full width */
-table {
-	width: 100%;
-	border-collapse: collapse;
+thead,
+tbody,
+table,
+tbody tr {
+	display: flex;
 }
 
-/* Style the table headers and cells */
-th,
-td {
-	border-bottom: 1px solid var(--stone-150);
-	padding: 8px;
+table {
+	/* layout */
+	width: 100%;
+	border-collapse: collapse;
+	align-items: center;
+	/* typography */
 	text-align: left;
 }
 
-/* Transform the table layout */
-table {
-	display: flex;
-	align-items: center;
-}
-
-thead,
-tbody {
-	/* flex-basis: 100%; */
-	flex-grow: 1;
-	display: flex;
-	flex-direction: row;
-}
-
-thead th,
-tbody td {
+th,
+td {
+	/* layout */
+	padding: 0.5em;
 	display: block;
-	width: 100%;
 	padding: 0.75em 0 0.75em 2em;
 }
 
-thead tr {
-	flex: 1;
-}
-
-th {
-	font-weight: 400;
-}
-
 tbody tr {
-	display: flex;
+	/* layout */
 	flex-direction: column;
-	flex: 1;
 }
 
-tbody tr td {
+thead,
+tbody,
+tr,
+td {
+	/* layout */
 	flex: 1;
 }
