@@ -1,5 +1,6 @@
 @import url("@styles/layout.css") layer(layout);
 @import url("@styles/reset.css") layer(reset);
+@import url("@styles/table.css") layer(layout.table);
 
 @layer reset, base, layout;
 
