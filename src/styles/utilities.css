@@ -1,10 +1,11 @@
 @import url(./margins.css);
 @import url(./padding.css);
 
+/* provides a border-bottom reused in multiple places throughout the page */
 .border-bottom {
 	border-bottom: 1px solid var(--stone-150);
 }
-
+/* media query for tablets and larger */
 @media (min-width: 768px) {
 	/* Utility class for border radius medium */
 	.border-radius-medium {
