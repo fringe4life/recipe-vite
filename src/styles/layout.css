@@ -6,7 +6,7 @@
 		[content-end] 0px
 		[full-width-end];
 
-	gap: 2em;
+	gap: 0 2em;
 }
 
 .subgrid {
@@ -21,5 +21,20 @@
 	}
 	& > .content {
 		grid-column: content;
+	}
+}
+
+@media (width >= 768px){
+	.main-grid,
+	.subgrid {
+		& > .narrow--to-content {
+			grid-column: content;
+		}
+	}
+	.main-grid {
+		gap: 0 2.5em;
+	}
+	.py-medium {
+		padding: 2.5em 0;
 	}
 }
