@@ -1,3 +1,4 @@
+/* Used on body to provide layout for the page */
 .main-grid {
 	display: grid;
 	grid-template-columns:
@@ -8,12 +9,12 @@
 
 	gap: 0 2em;
 }
-
+/* used to pass columns to child elements */
 .subgrid {
 	display: grid;
 	grid-template-columns: subgrid;
 }
-
+/* enables child elements to have their columns set */
 .subgrid,
 .main-grid {
 	& > .full-width {
@@ -23,7 +24,7 @@
 		grid-column: content;
 	}
 }
-
+/* media queries for tablets and larger */
 @media (width >= 768px) {
 	.main-grid,
 	.subgrid {
