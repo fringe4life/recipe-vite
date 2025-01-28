@@ -27,6 +27,11 @@
 	}
 }
 
+.center {
+	grid-column: content;
+	justify-self: center;
+}
+
 /* media queries for tablets and larger */
 @media (width >= 768px) {
 	.main-grid,
@@ -39,10 +44,6 @@
 		gap: 0 2.5em;
 	}
 
-	.center {
-		grid-column: content;
-		justify-self: center;
-	}
 	.py-medium {
 		padding: 2.5em 0;
 	}
